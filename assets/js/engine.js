@@ -22,7 +22,7 @@ btnChecar.addEventListener("click", async () => {
   const tarjetas = textarea.value.split("\n").map((card) => card.split("|"));
   //Hacemos la solicitud
   try {
-    const respuesta = await fetch("https://freeapi.stery.us/api/checarCC", {
+    const respuesta = await fetch("https://ccgen.stery.uno", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
